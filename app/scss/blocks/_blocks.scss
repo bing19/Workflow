@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+* {
+	box-sizing: border-box;
+	
+	margin-top: 0;
+	margin-bottom: 0;
+}
 body {
 	font: normal 1.1em 'Open Sans';
 }
@@ -6,6 +12,7 @@ h1 {
 	color: grey;
 	font-size: 2em;
 	text-decoration: underline;
+	margin-top:0;
 }
 h2 {
 	font-family: 'Open Sans';
@@ -32,6 +39,47 @@ h2 {
 	box-sizing:border-box;
 	width: 32%;
 	float: left;
+}
+
+.box {
+	width: 620px;
+	margin: 0 auto;
+	background: #eee;
+}
+
+// Stiki Footer
+
+// Элементы основного контейнера должны быть в блоке с очисткой. 
+// Свойства :after content и display: table, уберут пустое место между футром и wrapperom
+
+
+.wrap {
+	width: 80%;
+	margin: 0 auto;
+	min-height: calc(100vh - 100px);
+	box-sizing: border-box;
+}
+.foo {
+	text-align: center;
+	height: 100px;
+	background: #595959;
+	color: white;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+.col {
+	// width: 300px;
+	float:left;
+	border: 10px solid #3bb491;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	width: 300px;
+	margin-left: 20px;
+	&:first-child {
+		margin-left: 0;
+	}
+	
 }
 .block:last-child {
 	margin-right: 0;

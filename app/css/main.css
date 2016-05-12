@@ -1,11 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+h1 {
+  margin-bottom: 24px; }
+
+h2 {
+  margin-top: 24px;
+  margin-bottom: 12px; }
+
+p {
+  margin-top: 12px; }
+
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0; }
+
 body {
   font: normal 1.1em 'Open Sans'; }
 
 h1 {
   color: grey;
   font-size: 2em;
-  text-decoration: underline; }
+  text-decoration: underline;
+  margin-top: 0; }
 
 h2 {
   font-family: 'Open Sans';
@@ -34,6 +50,35 @@ h2 {
   box-sizing: border-box;
   width: 32%;
   float: left; }
+
+.box {
+  width: 620px;
+  margin: 0 auto;
+  background: #eee; }
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+  box-sizing: border-box; }
+
+.foo {
+  text-align: center;
+  height: 100px;
+  background: #595959;
+  color: white;
+  padding-top: 30px;
+  box-sizing: border-box; }
+
+.col {
+  float: left;
+  border: 10px solid #3bb491;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  width: 300px;
+  margin-left: 20px; }
+  .col:first-child {
+    margin-left: 0; }
 
 .block:last-child {
   margin-right: 0; }
@@ -77,6 +122,15 @@ h2 {
   top: 50%;
   margin-top: -15px;
   content: ' '; }
+
+.heading-margin {
+  margin: 0; }
+
+.paragraph-margin {
+  margin: 0; }
+
+.heading-margin + .paragraph-margin {
+  margin-top: 15px; }
 
 @media (max-width: 1400px) {
   .block2 {
